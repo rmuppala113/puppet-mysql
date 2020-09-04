@@ -1,0 +1,4 @@
+---
+mysql::install_name: 'mariadb-server'
+mysql::config_path : '/etc/my.cnf.d/server.cnf'
+mysql::service_name: 'mariadb'

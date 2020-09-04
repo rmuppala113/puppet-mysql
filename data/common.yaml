@@ -1,0 +1,9 @@
+---
+mysql::install_name: 'mariadb-server'
+mysql::install_ensure: 'present'
+mysql::config_path: '/etc/my.cnf.d/server.cnf'
+mysql::config_ensure: 'file'
+mysql::service_ensure: 'running'
+mysql::service_name: 'mariadb'
+mysql::service_enable: true
+mysql::service_hasrestart: true
